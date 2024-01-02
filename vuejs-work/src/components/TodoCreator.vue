@@ -6,7 +6,7 @@ const todo = ref('testing');
 console.log(todo.value);
 
 const todoState = reactive({
-    todo: "testing reactive",
+    todo: "",
 });
 
 console.log(todoState.todo);
