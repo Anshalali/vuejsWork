@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import TodoCreator from "../components/TodoCreator.vue";
+</script>
 
 <template>
   <main>
@@ -15,11 +17,9 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 40px 16px;
-  border: 1px solid red;
   h1 {
     margin-bottom: 16px;
     text-align: center;
-    border: 1px dotted green;
   }
 }
 </style>
