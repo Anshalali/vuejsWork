@@ -28,7 +28,7 @@ header {
         .branding {
             display: flex;
             align-items: center;
-            width: 130%;
+            width: 100%;
             gap: 8px;
             img {
                 max-width: 70px;
