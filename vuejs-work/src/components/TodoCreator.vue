@@ -3,19 +3,16 @@ import { reactive, ref } from 'vue';
 
 const todo = ref('testing');
 
-console.log(todo.value);
-
 const todoState = reactive({
     todo: "",
 });
 
-console.log(todoState.todo);
 </script>
 
 <template>
     <div class="input-wrap">
         <input type="text" v-model="todoState.todo" />
-        <button>Create</button>
+        <button @click="chreateTodo()">Create</button>
     </div>
     <p>{{ todoState.todo }}</p>
 </template>
