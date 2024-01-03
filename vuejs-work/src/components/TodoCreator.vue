@@ -1,13 +1,10 @@
 <script setup>
-import { defineEmits, ref, reactive } from 'vue';
+import { ref, } from 'vue';
 
 const emit = defineEmits(["createTodo"]);
 
 const todo = ref('testing');
 
-const todoState = reactive({
-    todo: "",
-});
 
 const createTodo = () => {
     emit("createTodo", todo.value);
@@ -17,7 +14,7 @@ const createTodo = () => {
 
 <template>
     <div class="input-wrap">
-        <input type="text" v-model="todoState.todo" />
+        <input type="text" v-model="todo" />
         <button @click="createTodo()">Create</button>
     </div>
     <p>{{ todoState.todo }}</p>
