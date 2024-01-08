@@ -1,24 +1,6 @@
-<script setup>
-import { ref, } from 'vue';
+<script setup></script>
 
-const emit = defineEmits(["createTodo"]);
-
-const todo = ref('testing');
-
-
-const createTodo = () => {
-    emit("createTodo", todo.value);
-};
-
-</script>
-
-<template>
-    <div class="input-wrap">
-        <input type="text" v-model="todo" />
-        <button @click="createTodo()">Create</button>
-    </div>
-    <p>{{ todoState.todo }}</p>
-</template>
+<template></template>
 
 <style lang="scss" scoped>
 .input-wrap {

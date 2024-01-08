@@ -1,24 +1,8 @@
-<script setup>
-import { ref } from "vue";
-import { uid } from "uid";
-import TodoCreator from "../components/TodoCreator.vue";
-const todoList = ref([]);
-
-const createTodo = (todo) => {
-  todoList.value.push({
-    id: uid(),
-    todo,
-    isCompleted: null,
-    isEditing: null,
-  });
-};
-</script>
+<script setup></script>
 
 <template>
   <main>
     <h1>Create Todo</h1>
-    <TodoCreator @create-todo="createTodo" />
-
   </main>
 </template>
 
